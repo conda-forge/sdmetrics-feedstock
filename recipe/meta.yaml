@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: 645a2198825b42a0f2419428913c4bc80399a81746b0836a268b44ccb138228e
+  sha256: 28df1cdd6988b3464306c1d189da19ee13a49023c53ca8b3db399fc9fd45fae8
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -52,4 +52,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - conda-forge/rdt
+    - conda-forge/sdv
