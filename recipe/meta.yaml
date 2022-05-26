@@ -21,7 +21,7 @@ requirements:
     - pytest-runner >=2.11.1
     - python >=3.6,<3.10
   run:
-    - copulas >=0.6.0,<0.7
+    - copulas >=0.7.0,<0.8
     - numpy >=1.18.0,<2
     - pandas >=1.1.3,<2
     - python >=3.6,<3.10
