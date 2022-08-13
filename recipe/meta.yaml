@@ -40,7 +40,7 @@ test:
     - pytest
   source_files:
     - tests/unit
-    - tests.utils
+    - tests/utils.py
 
 about:
   home: https://github.com/sdv-dev/SDMetrics
