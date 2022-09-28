@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: 278a79f7521e742c06c55a7890589e851b2958c60ecd86b2380a6730fb61df19
+  sha256: 0ff64bda2b1c3139d29d66dba302566a8882e64ee89e6904bcdb360365269d8d
 
 build:
   number: 0
@@ -28,6 +28,8 @@ requirements:
     - scikit-learn >=0.24,<2
     - scipy >=1.5.4,<2
     - pytorch >=1.4.0,<2
+    - tqdm >=4.15,<5
+    - plotly >=5.10.0,<6
 
 test:
   imports:
