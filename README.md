@@ -1,11 +1,11 @@
-About sdmetrics
-===============
+About sdmetrics-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sdmetrics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sdv-dev/SDMetrics
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sdmetrics-feedstock/blob/main/LICENSE.txt)
 
 Summary: Metrics for Synthetic Data Generation Projects
 
