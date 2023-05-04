@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.9.3" %}
+{% set version = "0.10.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: 33b4cecb4db9a50ba41634a8368b1ffcfc095d48c84d41a539505832107e5cae
+  sha256: 3d0f9ec77c1dd107d56dcac4b549931cfc9f03f0964e8d97bfb5769ae5a0f653
 
 build:
   number: 0
@@ -21,9 +21,9 @@ requirements:
     - pytest-runner >=2.11.1
     - python >=3.7,<3.11
   run:
-    - copulas >=0.8.0,<0.9
+    - copulas >=0.9.0,<0.10
     - numpy >=1.20.0,<2
-    - pandas >=1.1.3,<2
+    - pandas >=1.1.3
     - python >=3.7,<3.11
     - scikit-learn >=0.24,<2
     - scipy >=1.5.4,<2
