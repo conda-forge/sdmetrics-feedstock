@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
   sha256: 8e6d48ca1721b77f153e6fb4110cb2a14948f9e760fc88779a32c2c976e857e3
 
 build:
@@ -20,6 +20,7 @@ requirements:
     - pip
     - pytest-runner >=2.11.1
     - python >=3.8,<3.13
+    - setuptools
   run:
     - copulas >=0.11.0
     - numpy >=1.21.0
