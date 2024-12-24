@@ -11,7 +11,7 @@ source:
   sha256: 09b8f36106386f71855a695e8a9b9648caa93ce3c1553b97310a229ec6a8413b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,14 +19,14 @@ requirements:
   host:
     - pip
     - pytest-runner >=2.11.1
-    - python >=3.8,<3.13
+    - python {{ python_min }}
     - setuptools
   run:
     - copulas >=0.11.0
     - numpy >=1.21.0
     - pandas >=1.4.0
     - plotly >=5.19.0,<6
-    - python >=3.8,<3.13
+    - python >={{ python_min }},<3.13
     - scikit-learn >=1.0.2,<2
     - scipy >=1.7.3,<2
     - tqdm >=4.29
@@ -38,6 +38,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/sdv-dev/SDMetrics
