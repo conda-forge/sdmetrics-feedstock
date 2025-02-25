@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.18.0" %}
+{% set version = "0.19.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: 09b8f36106386f71855a695e8a9b9648caa93ce3c1553b97310a229ec6a8413b
+  sha256: 97d4cc28a0ee62075c1e2c7f378f55f57ca0f4bcbdf289ab5458adc72de1dcce
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
