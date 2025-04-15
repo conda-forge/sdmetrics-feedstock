@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.19.0" %}
+{% set version = "0.20.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: 97d4cc28a0ee62075c1e2c7f378f55f57ca0f4bcbdf289ab5458adc72de1dcce
+  sha256: 866c999b5c79613ec76775920e6ab1f1d60ce40441e09ee6e0f5c5b81b181a42
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - setuptools
   run:
     - copulas >=0.12.1
-    - numpy >=1.21.0
+    - numpy >=1.22.2
     - pandas >=1.4.0
     - plotly >=5.19.0,<6
     - python >={{ python_min }},<3.14
