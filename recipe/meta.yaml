@@ -1,5 +1,5 @@
 {% set name = "sdmetrics" %}
-{% set version = "0.31.0" %}
+{% set version = "0.31.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/sdmetrics-{{ version }}.tar.gz
-  sha256: dcdf3a25a0557926760de7eae0cbccf4ac2a879b62ee18b036064e8c005c5f90
+  sha256: be2667ece4217b028bf96d8f126108091b61da2d915f215b9e00650c00ff90da
 
 build:
   number: 0
